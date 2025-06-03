@@ -39,7 +39,7 @@ export default function Header() {
         scrolled ? "bg-background/95 backdrop-blur-sm shadow-sm" : "bg-transparent"
       )}
     >
-      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center">
           <Link href="/" className="font-bold text-xl md:text-2xl text-primary">
             Loumanou Angel

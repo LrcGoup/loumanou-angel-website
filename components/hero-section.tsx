@@ -16,7 +16,7 @@ export default function HeroSection() {
     <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/5 dark:from-primary/5 dark:to-background z-0" />
       
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="max-w-6xl mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className={cn(
             "transition-all duration-1000 transform",
