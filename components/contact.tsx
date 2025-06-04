@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { MapPin, Phone, Mail } from "lucide-react"
+import ContactForm from "./contact-form"
 
 export function Contact() {
   return (
@@ -18,35 +19,7 @@ export function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="bg-gray-50 p-8 rounded-2xl">
             <h3 className="text-2xl font-bold mb-6">Envoyez-nous un message</h3>
-            <form className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="space-y-2">
-                  <label htmlFor="name" className="text-sm font-medium">
-                    Nom complet
-                  </label>
-                  <Input id="name" placeholder="Votre nom" />
-                </div>
-                <div className="space-y-2">
-                  <label htmlFor="email" className="text-sm font-medium">
-                    Email
-                  </label>
-                  <Input id="email" type="email" placeholder="votre@email.com" />
-                </div>
-              </div>
-              <div className="space-y-2">
-                <label htmlFor="subject" className="text-sm font-medium">
-                  Sujet
-                </label>
-                <Input id="subject" placeholder="Sujet de votre message" />
-              </div>
-              <div className="space-y-2">
-                <label htmlFor="message" className="text-sm font-medium">
-                  Message
-                </label>
-                <Textarea id="message" placeholder="Votre message" rows={5} />
-              </div>
-              <Button className="w-full bg-green-600 hover:bg-green-700 text-white">Envoyer le message</Button>
-            </form>
+            <ContactForm />
           </div>
 
           <div className="space-y-8">

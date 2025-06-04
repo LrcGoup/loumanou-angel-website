@@ -3,6 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
+import NewsletterForm from "./newsletter-form"
 
 export default function Footer() {
   return (
@@ -99,21 +100,7 @@ export default function Footer() {
             <p className="text-gray-300 mb-4">
               Abonnez-vous à notre newsletter pour recevoir les dernières actualités.
             </p>
-            <form className="space-y-4">
-              <div className="flex">
-                <input
-                  type="email"
-                  placeholder="Votre email"
-                  className="flex-1 px-4 py-2 rounded-l-md text-gray-900 focus:outline-none"
-                />
-                <button
-                  type="submit"
-                  className="bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 rounded-r-md font-medium"
-                >
-                  OK
-                </button>
-              </div>
-            </form>
+            <NewsletterForm />
           </div>
         </div>
       </div>

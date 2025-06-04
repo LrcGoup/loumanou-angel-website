@@ -44,7 +44,7 @@ export function Hero() {
           )}>
             <div className="relative h-[250px] md:h-[400px] w-full">
               <Image
-                src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                src="/assets/loum-angel-team.png"
                 alt="Professional working with technology"
                 fill
                 className="object-cover rounded-lg"
