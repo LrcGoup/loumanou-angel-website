@@ -64,11 +64,13 @@ export default function TestimonialsSection() {
   }
 
   return (
-    <section id="testimonials" className="py-20 bg-muted/50">
+    <section id="testimonials" className="py-20 bg-muted/50 scroll-mt-14">
       <div id="testimonials-section" className="max-w-6xl mx-auto px-4 overflow-hidden">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Ce que disent nos clients</h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Ce que disent nos clients</h2>
+          <div className="h-1 w-24 bg-green-500 mx-auto mb-6"></div>
+          <p className="text-gray-600">
             Découvrez comment Loumanou Angel a aidé ses clients à atteindre leurs objectifs commerciaux et à stimuler leur croissance.
           </p>
         </div>

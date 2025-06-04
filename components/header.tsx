@@ -70,15 +70,15 @@ export default function Header() {
               {item.name}
             </Link>
           ))}
-          {/* <ThemeSwitch /> */}
-          <Button className="bg-green-600 text-primary-foreground hover:bg-green-600/90 py-5 px-6">
-            Contactez-nous
-          </Button>
+          <Link href="#contact">
+            <Button className="bg-green-600 text-primary-foreground hover:bg-green-600/90 py-5 px-6">
+              Contactez-nous
+            </Button>
+          </Link>
         </nav>
 
         {/* Mobile Navigation Toggle */}
         <div className="flex items-center md:hidden space-x-2">
-          {/* <ThemeSwitch /> */}
           <Button 
             variant="ghost" 
             size="icon" 
@@ -103,9 +103,11 @@ export default function Header() {
                   {item.name}
                 </Link>
               ))}
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 w-full mt-2">
-                Contactez-nous
-              </Button>
+              <Link href="#contact">
+                <Button className="bg-primary text-primary-foreground hover:bg-primary/90 w-full mt-2">
+                  Contactez-nous
+                </Button>
+              </Link>
             </nav>
           </div>
         )}

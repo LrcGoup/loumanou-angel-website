@@ -27,7 +27,7 @@ export default function AboutSection() {
   }, [])
 
   return (
-    <section id="about" className="py-20">
+    <section id="about" className="py-20 scroll-mt-14">
       <div id="about-section" className="max-w-6xl mx-auto px-4 overflow-hidden">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className={cn(
@@ -51,9 +51,12 @@ export default function AboutSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12",
             "transition-all duration-1000 delay-300"
           )}>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              À Propos de <span className="text-primary">Loumanou Angel</span>
-            </h2>
+            <div className="mb-10">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                À Propos de <span className="text-green-600">Loumanou</span> <span className="text-yellow-500">Angel</span>
+              </h2>
+              <div className="h-1 w-44 bg-green-500"></div>
+            </div>
             
             <p className="text-muted-foreground mb-6">
               Créée le 3 février 2023 à Abidjan, en Côte d'Ivoire, Loumanou Angel est une succursale du groupe Loumanou Ruchty Cadol Group SARL. Depuis sa fondation, elle s’est imposée comme un acteur incontournable dans le domaine du conseil aux entreprises.

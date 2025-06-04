@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import { useEffect, useState } from "react"
 import { cn } from "@/lib/utils"
+import Link from "next/link"
 
 export function Hero() {
   const [isVisible, setIsVisible] = useState(false)
@@ -29,13 +30,17 @@ export function Hero() {
               Chez Loumanou Angel, nous proposons des solutions de conseil stratégiques pour aider votre entreprise à se développer et à atteindre ses objectifs.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="group bg-green-600">
-                Nos services
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Button>
-              <Button size="lg" variant="outline">
-                En savoir plus
-              </Button>
+              <Link href="#services">
+                <Button size="lg" className="group bg-green-600">
+                  Nos services
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </Button>
+              </Link>
+              <Link href="#about">
+                <Button size="lg" variant="outline">
+                  En savoir plus
+                </Button>
+              </Link>
             </div>
           </div>
           <div className={cn(

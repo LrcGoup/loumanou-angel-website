@@ -59,11 +59,13 @@ export default function ServicesSection() {
   }, [])
 
   return (
-    <section id="services" className="py-20 bg-muted/50">
+    <section id="services" className="py-20 bg-muted/50 scroll-mt-14">
       <div id="services-section" className="max-w-6xl mx-auto px-4 overflow-hidden">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Nos Services</h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Nos Services</h2>
+          <div className="h-1 w-24 bg-green-500 mx-auto mb-6"></div>
+          <p className="text-gray-600">
             Découvrez notre gamme complète de services de conseil conçus pour propulser votre entreprise vers de nouveaux sommets.
           </p>
         </div>
@@ -80,10 +82,10 @@ export default function ServicesSection() {
               style={{ transitionDelay: `${index * 100}ms` }}
             >
               <CardHeader className="pb-2">
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                  <service.icon className="h-6 w-6 text-primary" />
+                <div className="w-12 h-12 rounded-lg bg-yellow-500/10 flex items-center justify-center mb-4">
+                  <service.icon className="h-6 w-6 text-yellow-500" />
                 </div>
-                <CardTitle className="text-xl">{service.title}</CardTitle>
+                <CardTitle className="text-xl text-gray-600">{service.title}</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-base text-muted-foreground">

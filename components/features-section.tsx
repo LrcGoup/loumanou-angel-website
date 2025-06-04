@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { CheckCircle, ChevronRight } from "lucide-react"
+import Link from "next/link"
 
 const features = [
   {
@@ -61,15 +62,19 @@ export default function FeaturesSection() {
 
   return (
     <section className="py-20">
-      <div id="features-section" className="max-w-6xl mx-auto px-4 overflow-hidden">
+      <div id="features-section" className="max-w-6xl mx-auto px-4 overflow-hidden scroll-mt-14">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className={cn(
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12",
             "transition-all duration-1000"
           )}>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Pourquoi choisir <span className="text-primary">Loumanou Angel</span> ?
-            </h2>
+
+            <div className="mb-10">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Pourquoi choisir <br /> <span className="text-green-600">Loumanou</span> <span className="text-yellow-500">Angel</span>
+              </h2>
+              <div className="h-1 w-44 bg-green-500"></div>
+            </div>
             
             <p className="text-muted-foreground mb-8">
               Nous nous distinguons par notre approche centrée sur le client et notre engagement à fournir des solutions qui dépassent vos attentes.
@@ -88,10 +93,12 @@ export default function FeaturesSection() {
             </div>
             
             <div className="mt-8">
-              <Button className="group bg-green-600 text-primary-foreground hover:bg-green-600/90 py-5 px-6">
-                Découvrir nos avantages
-                <ChevronRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Button>
+              <Link href="https://lrcgroupapp.com" target="_blank">
+                <Button className="group bg-green-600 text-primary-foreground hover:bg-green-600/90 py-5 px-6">
+                  Découvrir nos avantages
+                  <ChevronRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </Button>
+              </Link>
             </div>
           </div>
           
