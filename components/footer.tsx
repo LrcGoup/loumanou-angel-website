@@ -95,7 +95,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="">
+          <div className="w-full">
             <h3 className="text-lg font-bold mb-6">Newsletter</h3>
             <p className="text-gray-300 mb-4">
               Abonnez-vous à notre newsletter pour recevoir les dernières actualités.
