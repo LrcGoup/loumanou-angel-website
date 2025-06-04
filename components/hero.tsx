@@ -17,7 +17,7 @@ export function Hero() {
       <div className="max-w-6xl mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className={cn(
-            "transition-all duration-1000 transform space-y-6",
+            "transition-all duration-1000 transform space-y-6 pt-12 lg:pt-0",
             isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
           )}>
             <h1 className="text-4xl md:text-5xl font-bold text-white">
@@ -42,7 +42,7 @@ export function Hero() {
             "transition-all duration-1000 delay-300 transform relative",
             isVisible ? "translate-x-0 opacity-100" : "translate-x-10 opacity-0"
           )}>
-            <div className="relative h-[400px] w-full">
+            <div className="relative h-[250px] md:h-[400px] w-full">
               <Image
                 src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                 alt="Professional working with technology"
