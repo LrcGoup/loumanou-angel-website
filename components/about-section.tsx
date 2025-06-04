@@ -45,10 +45,19 @@ export default function AboutSection() {
       <div id="about-section" className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className={cn(
-            "order-2 lg:order-1",
+            "order-2 lg:order-1 space-y-20",
             isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12",
             "transition-all duration-1000"
           )}>
+            <div className="relative">
+              <div className="absolute -top-4 -left-4 w-24 h-24 bg-primary/10 rounded-lg z-0" />
+              <img 
+                src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                alt="Notre équipe" 
+                className="rounded-lg object-cover w-full h-auto relative z-10 shadow-lg"
+              />
+              <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary/10 rounded-lg z-0" />
+            </div>
             <div className="relative">
               <div className="absolute -top-4 -left-4 w-24 h-24 bg-primary/10 rounded-lg z-0" />
               <img 
@@ -89,7 +98,7 @@ export default function AboutSection() {
               ))}
             </div>
             
-            <Button>En savoir plus</Button>
+            <Button className="bg-green-600 text-primary-foreground hover:bg-green-600/90 py-5 px-6">En savoir plus</Button>
           </div>
         </div>
       </div>

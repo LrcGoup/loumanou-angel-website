@@ -78,7 +78,7 @@ export default function FeaturesSection() {
             </div>
             
             <div className="mt-8">
-              <Button className="group">
+              <Button className="group bg-green-600 text-primary-foreground hover:bg-green-600/90 py-5 px-6">
                 Découvrir nos avantages
                 <ChevronRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>

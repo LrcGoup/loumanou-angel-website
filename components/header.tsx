@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { ThemeSwitch } from "@/components/theme-switch"
 import { Menu, X } from "lucide-react"
+import Image from "next/image"
 
 const navItems = [
   { name: "Accueil", href: "/" },
@@ -39,10 +40,21 @@ export default function Header() {
         scrolled ? "bg-background/95 backdrop-blur-sm shadow-sm" : "bg-transparent"
       )}
     >
-      <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-4 py-5 flex items-center justify-between">
         <div className="flex items-center">
-          <Link href="/" className="font-bold text-xl md:text-2xl text-primary">
-            Loumanou Angel
+          <Link href="/" className="flex items-center space-x-1">
+            <div className="relative w-14 h-14">
+              <Image
+                src="/assets/icon-loum-angel.png"
+                alt="Professional working with technology"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <div className="flex flex-col justify-center font-semibold mt-1">
+              <span className="text-green-600">LOUMANOU</span>
+              <span className="text-yellow-500">ANGEL</span>
+            </div>
           </Link>
         </div>
 
@@ -52,20 +64,23 @@ export default function Header() {
             <Link
               key={item.name}
               href={item.href}
-              className="text-foreground/80 hover:text-primary transition-colors font-medium"
+              className={cn(
+                "text-foreground/80 hover:text-primary transition-colors font-medium",
+                scrolled ? "" : "text-white"
+              )}
             >
               {item.name}
             </Link>
           ))}
-          <ThemeSwitch />
-          <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
+          {/* <ThemeSwitch /> */}
+          <Button className="bg-green-600 text-primary-foreground hover:bg-green-600/90 py-5 px-6">
             Contactez-nous
           </Button>
         </nav>
 
         {/* Mobile Navigation Toggle */}
         <div className="flex items-center md:hidden space-x-2">
-          <ThemeSwitch />
+          {/* <ThemeSwitch /> */}
           <Button 
             variant="ghost" 
             size="icon" 

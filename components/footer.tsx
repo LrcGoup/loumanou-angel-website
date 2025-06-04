@@ -1,119 +1,158 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react"
+'use client'
 
-const footerLinks = [
-  {
-    title: "Services",
-    links: [
-      { name: "Conseil Stratégique", href: "#" },
-      { name: "Analyse de Données", href: "#" },
-      { name: "Intelligence Artificielle", href: "#" },
-      { name: "Développement Organisationnel", href: "#" },
-      { name: "Innovation & R&D", href: "#" },
-    ],
-  },
-  {
-    title: "Entreprise",
-    links: [
-      { name: "À propos", href: "#about" },
-      { name: "Équipe", href: "#" },
-      { name: "Carrières", href: "#" },
-      { name: "Témoignages", href: "#testimonials" },
-      { name: "Partenaires", href: "#" },
-    ],
-  },
-  {
-    title: "Ressources",
-    links: [
-      { name: "Blog", href: "#" },
-      { name: "Études de cas", href: "#" },
-      { name: "FAQ", href: "#" },
-      { name: "Support", href: "#" },
-      { name: "Contact", href: "#contact" },
-    ],
-  },
-]
+import Link from "next/link"
+import Image from "next/image"
+import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
 
 export default function Footer() {
   return (
-    <footer className="bg-muted pt-16 pb-8">
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
-          <div className="lg:col-span-2">
-            <Link href="/" className="font-bold text-2xl text-primary mb-4 inline-block">
-              Loumanou Angel
+    <footer className="bg-green-950 text-white">
+      <div className="max-w-6xl mx-auto px-4 py-12 md:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div>
+            <Link href="/" className="flex items-center space-x-1 mb-6">
+              <div className="relative w-20 h-20">
+                <Image
+                  src="/assets/icon-loum-angel.png"
+                  alt="Professional working with technology"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <div className="flex flex-col justify-center text-3xl font-semibold mt-1">
+                <span className="text-green-600">LOUMANOU</span>
+                <span className="text-yellow-500">ANGEL</span>
+              </div>
             </Link>
-            <p className="text-muted-foreground mb-6 max-w-md">
-              Fournisseur leader de solutions de conseil stratégique et d'analyse de données pour aider les entreprises à se développer et à prospérer.
+            <p className="text-gray-300 mb-6">
+              LRC Group est votre partenaire de confiance pour l'innovation technologique et la transformation digitale.
             </p>
-            
             <div className="flex space-x-4">
-              <a href="#" className="h-10 w-10 rounded-full bg-primary/10 hover:bg-primary/20 flex items-center justify-center transition-colors">
-                <Facebook className="h-5 w-5 text-primary" />
+              <Link href="#" className="text-gray-300 hover:text-yellow-400 transition-colors">
+                <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
-              </a>
-              <a href="#" className="h-10 w-10 rounded-full bg-primary/10 hover:bg-primary/20 flex items-center justify-center transition-colors">
-                <Twitter className="h-5 w-5 text-primary" />
+              </Link>
+              <Link href="#" className="text-gray-300 hover:text-yellow-400 transition-colors">
+                <Twitter className="h-5 w-5" />
                 <span className="sr-only">Twitter</span>
-              </a>
-              <a href="#" className="h-10 w-10 rounded-full bg-primary/10 hover:bg-primary/20 flex items-center justify-center transition-colors">
-                <Instagram className="h-5 w-5 text-primary" />
+              </Link>
+              <Link href="#" className="text-gray-300 hover:text-yellow-400 transition-colors">
+                <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
-              </a>
-              <a href="#" className="h-10 w-10 rounded-full bg-primary/10 hover:bg-primary/20 flex items-center justify-center transition-colors">
-                <Linkedin className="h-5 w-5 text-primary" />
+              </Link>
+              <Link href="#" className="text-gray-300 hover:text-yellow-400 transition-colors">
+                <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
-              </a>
+              </Link>
             </div>
           </div>
-          
-          {footerLinks.map((column, i) => (
-            <div key={i}>
-              <h3 className="font-semibold text-lg mb-4">{column.title}</h3>
-              <ul className="space-y-3">
-                {column.links.map((link, j) => (
-                  <li key={j}>
-                    <Link 
-                      href={link.href} 
-                      className="text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      {link.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-        
-        <div className="border-t border-border pt-8 mt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-muted-foreground text-sm">
-              © {new Date().getFullYear()} Loumanou Angel. Tous droits réservés.
+
+          <div>
+            <h3 className="text-lg font-bold mb-6">Liens rapides</h3>
+            <ul className="space-y-3">
+              <li>
+                <Link href="/" className="text-gray-300 hover:text-yellow-400 transition-colors">
+                  Accueil
+                </Link>
+              </li>
+              <li>
+                <Link href="/a-propos" className="text-gray-300 hover:text-yellow-400 transition-colors">
+                  À propos
+                </Link>
+              </li>
+              <li>
+                <Link href="/nos-filiales" className="text-gray-300 hover:text-yellow-400 transition-colors">
+                  Nos filiales
+                </Link>
+              </li>
+              <li>
+                <Link href="/actualites" className="text-gray-300 hover:text-yellow-400 transition-colors">
+                  Actualités
+                </Link>
+              </li>
+              <li>
+                <Link href="/galerie" className="text-gray-300 hover:text-yellow-400 transition-colors">
+                  Galerie
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="text-gray-300 hover:text-yellow-400 transition-colors">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-bold mb-6">Nos services</h3>
+            <ul className="space-y-3">
+              <li>
+                <Link href="#" className="text-gray-300 hover:text-yellow-400 transition-colors">
+                  Développement Logiciel
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="text-gray-300 hover:text-yellow-400 transition-colors">
+                  Innovation Technologique
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="text-gray-300 hover:text-yellow-400 transition-colors">
+                  Conseil & Stratégie
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="text-gray-300 hover:text-yellow-400 transition-colors">
+                  Analyse de Données
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="text-gray-300 hover:text-yellow-400 transition-colors">
+                  Solutions Web
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="text-gray-300 hover:text-yellow-400 transition-colors">
+                  Cybersécurité
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-bold mb-6">Newsletter</h3>
+            <p className="text-gray-300 mb-4">
+              Abonnez-vous à notre newsletter pour recevoir les dernières actualités.
             </p>
-            
-            <div className="flex space-x-6">
-              <Link 
-                href="#" 
-                className="text-sm text-muted-foreground hover:text-primary transition-colors"
-              >
-                Mentions légales
-              </Link>
-              <Link 
-                href="#" 
-                className="text-sm text-muted-foreground hover:text-primary transition-colors"
-              >
-                Politique de confidentialité
-              </Link>
-              <Link 
-                href="#" 
-                className="text-sm text-muted-foreground hover:text-primary transition-colors"
-              >
-                Conditions d'utilisation
-              </Link>
-            </div>
+            <form className="space-y-4">
+              <div className="flex">
+                <input
+                  type="email"
+                  placeholder="Votre email"
+                  className="flex-1 px-4 py-2 rounded-l-md text-gray-900 focus:outline-none"
+                />
+                <button
+                  type="submit"
+                  className="bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 rounded-r-md font-medium"
+                >
+                  OK
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div className="border-t border-green-900">
+        <div className="max-w-6xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-gray-300 text-sm">© {new Date().getFullYear()} LRC Group. Tous droits réservés.</p>
+          <div className="flex space-x-6 mt-4 md:mt-0">
+            <Link href="#" className="text-gray-300 hover:text-yellow-400 transition-colors text-sm">
+              Politique de confidentialité
+            </Link>
+            <Link href="#" className="text-gray-300 hover:text-yellow-400 transition-colors text-sm">
+              Conditions d'utilisation
+            </Link>
           </div>
         </div>
       </div>

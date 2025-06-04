@@ -43,7 +43,7 @@ export default function StatsSection() {
   }, [])
 
   return (
-    <section className="py-16 bg-primary text-primary-foreground">
+    <section className="py-16 bg-green-950 text-primary-foreground">
       <div id="stats-section" className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, index) => (

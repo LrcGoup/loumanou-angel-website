@@ -1,11 +1,11 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
 
-const inter = Inter({ subsets: ['latin'] });
+const poppins = Poppins({ weight: '400', subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Loumanou Angel | Solutions de Conseil et Services',
@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={poppins.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
