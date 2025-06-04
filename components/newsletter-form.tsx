@@ -36,23 +36,25 @@ export default function NewsletterForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4 w-full">
-      <div className="flex w-full">
+    <form onSubmit={handleSubmit} className="space-y-4">
+      <div className="flex">
         <input
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Votre email"
-          className="flex-1 px-4 py-2 rounded-l-md text-gray-900 focus:outline-none"
+          className="w-52 px-4 py-2 rounded-l-md text-gray-900 focus:outline-none"
           required
         />
-        <button
-          type="submit"
-          disabled={loading}
-          className="bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 rounded-r-md font-medium"
-        >
-          {loading ? "..." : "OK"}
-        </button>
+        <div className="">
+          <button
+            type="submit"
+            disabled={loading}
+            className="bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 rounded-r-md font-medium"
+          >
+            {loading ? "..." : "OK"}
+          </button>
+        </div>
       </div>
 
       {message && (

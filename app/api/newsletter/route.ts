@@ -23,6 +23,11 @@ export async function POST(req: Request) {
       html: `<p><strong>Email :</strong> ${email}</p><p>vient de s’inscrire à la newsletter.</p>`,
     });
 
+    await resend.contacts.create({
+      email,
+      audienceId: process.env.RESEND_AUDIENCE_ID as string,
+    })
+
     return NextResponse.json({ success: true });
   } catch (error) {
     console.error("Erreur envoi newsletter :", error);
