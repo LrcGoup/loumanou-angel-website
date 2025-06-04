@@ -22,7 +22,7 @@ export default function RootLayout({
       <head>
         <link rel="shortcut icon" href="/assets/icon-loum-angel.png" type="image/x-icon" />
       </head>
-      <body className={poppins.className}>
+      <body className={poppins.className + ' overflow-hidden w-full h-full'}>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
