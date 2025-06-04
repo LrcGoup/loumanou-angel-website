@@ -94,7 +94,7 @@ export default function TestimonialsSection() {
                     <CardHeader className="pb-2">
                       <div className="flex space-x-1 mb-2">
                         {[...Array(testimonial.stars)].map((_, i) => (
-                          <Star key={i} className="h-5 w-5 fill-primary text-primary" />
+                          <Star key={i} className="h-5 w-5 fill-yellow-500 text-yellow-500" />
                         ))}
                       </div>
                     </CardHeader>

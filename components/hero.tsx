@@ -29,7 +29,7 @@ export function Hero() {
               Chez Loumanou Angel, nous proposons des solutions de conseil stratégiques pour aider votre entreprise à se développer et à atteindre ses objectifs.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="group">
+              <Button size="lg" className="group bg-green-600">
                 Nos services
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>

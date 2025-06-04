@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
-import { ChevronRight } from "lucide-react"
+import { CheckCircle, ChevronRight } from "lucide-react"
 
 const features = [
   {
@@ -22,6 +22,21 @@ const features = [
     title: "Support Continu",
     description: "Nous offrons un support continu après l'implémentation pour assurer le succès à long terme de nos solutions."
   }
+]
+
+const values = [
+  {
+    title: "Excellence",
+    description: "Nous nous efforçons d'atteindre l'excellence dans tous nos services et interactions."
+  },
+  {
+    title: "Innovation",
+    description: "Nous adoptons constamment de nouvelles idées et technologies pour rester à la pointe."
+  },
+  {
+    title: "Intégrité",
+    description: "Nous maintenons les plus hauts standards d'éthique et de transparence dans nos relations."
+  },
 ]
 
 export default function FeaturesSection() {
@@ -56,23 +71,18 @@ export default function FeaturesSection() {
               Pourquoi choisir <span className="text-primary">Loumanou Angel</span> ?
             </h2>
             
-            <p className="text-muted-foreground text-lg mb-8">
+            <p className="text-muted-foreground mb-8">
               Nous nous distinguons par notre approche centrée sur le client et notre engagement à fournir des solutions qui dépassent vos attentes.
             </p>
             
-            <div className="space-y-6">
-              {features.map((feature, index) => (
-                <div 
-                  key={index} 
-                  className={cn(
-                    "bg-accent/50 p-6 rounded-lg border border-border/40",
-                    isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12",
-                    "transition-all duration-500"
-                  )}
-                  style={{ transitionDelay: `${index * 150}ms` }}
-                >
-                  <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-                  <p className="text-muted-foreground">{feature.description}</p>
+            <div className="space-y-4 mb-8">
+              {values.map((value, index) => (
+                <div key={index} className="flex items-start gap-3">
+                  <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <h3 className="font-semibold text-lg">{value.title}</h3>
+                    <p className="text-muted-foreground">{value.description}</p>
+                  </div>
                 </div>
               ))}
             </div>

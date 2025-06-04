@@ -13,7 +13,7 @@ const stats = [
     label: "Projets réalisés",
   },
   {
-    value: "15+",
+    value: "5+",
     label: "Années d'expérience",
   },
   {

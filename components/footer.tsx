@@ -9,7 +9,7 @@ export default function Footer() {
     <footer className="bg-green-950 text-white">
       <div className="max-w-6xl mx-auto px-4 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-          <div>
+          <div className="">
             <Link href="/" className="flex items-center space-x-1 mb-6">
               <div className="relative w-20 h-20">
                 <Image
@@ -47,79 +47,54 @@ export default function Footer() {
             </div>
           </div>
 
-          <div>
-            <h3 className="text-lg font-bold mb-6">Liens rapides</h3>
+          <div className="lg:ml-10">
+            <h3 className="text-lg font-bold mb-6">Nos partenaires</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/" className="text-gray-300 hover:text-yellow-400 transition-colors">
-                  Accueil
+                <Link href="https://www.lrcgroupapp.com/detailsFiliale.html#3" className="text-gray-300 hover:text-yellow-400 transition-colors">
+                Pro Ecole
                 </Link>
               </li>
               <li>
-                <Link href="/a-propos" className="text-gray-300 hover:text-yellow-400 transition-colors">
-                  À propos
+                <Link href="https://www.lrcgroupapp.com/detailsFiliale.html#2" target="_blank" className="text-gray-300 hover:text-yellow-400 transition-colors">
+                Candide
                 </Link>
               </li>
               <li>
-                <Link href="/nos-filiales" className="text-gray-300 hover:text-yellow-400 transition-colors">
-                  Nos filiales
+                <Link href="https://www.ridecongo.com" target="_blank" className="text-gray-300 hover:text-yellow-400 transition-colors">
+                Ride Congo
                 </Link>
               </li>
               <li>
-                <Link href="/actualites" className="text-gray-300 hover:text-yellow-400 transition-colors">
-                  Actualités
-                </Link>
-              </li>
-              <li>
-                <Link href="/galerie" className="text-gray-300 hover:text-yellow-400 transition-colors">
-                  Galerie
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="text-gray-300 hover:text-yellow-400 transition-colors">
-                  Contact
+                <Link href="https://directransfert.com" target="_blank" className="text-gray-300 hover:text-yellow-400 transition-colors">
+                Direct Transfert
                 </Link>
               </li>
             </ul>
           </div>
 
-          <div>
-            <h3 className="text-lg font-bold mb-6">Nos services</h3>
+          <div className="">
+            <h3 className="text-lg font-bold mb-6">Nos Contacts</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="#" className="text-gray-300 hover:text-yellow-400 transition-colors">
-                  Développement Logiciel
+                <Link href="tel:+225 07 99 01 69 20" className="text-gray-300 hover:text-yellow-400 transition-colors">
+                 +225 07 99 01 69 20
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-300 hover:text-yellow-400 transition-colors">
-                  Innovation Technologique
+                <Link href="tel:+225 66 69 95 60" className="text-gray-300 hover:text-yellow-400 transition-colors">
+                 +225 66 69 95 60
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-300 hover:text-yellow-400 transition-colors">
-                  Conseil & Stratégie
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-gray-300 hover:text-yellow-400 transition-colors">
-                  Analyse de Données
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-gray-300 hover:text-yellow-400 transition-colors">
-                  Solutions Web
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-gray-300 hover:text-yellow-400 transition-colors">
-                  Cybersécurité
+                <Link href="mailto:contact@loumanouangel.com" className="text-gray-300 hover:text-yellow-400 transition-colors">
+                 contact@loumanouangel.com
                 </Link>
               </li>
             </ul>
           </div>
 
-          <div>
+          <div className="">
             <h3 className="text-lg font-bold mb-6">Newsletter</h3>
             <p className="text-gray-300 mb-4">
               Abonnez-vous à notre newsletter pour recevoir les dernières actualités.
@@ -145,14 +120,14 @@ export default function Footer() {
 
       <div className="border-t border-green-900">
         <div className="max-w-6xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-300 text-sm">© {new Date().getFullYear()} LRC Group. Tous droits réservés.</p>
+          <p className="text-gray-300 text-sm">© {new Date().getFullYear()} Loumanou Angel. Tous droits réservés.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <Link href="#" className="text-gray-300 hover:text-yellow-400 transition-colors text-sm">
+            {/* <Link href="#" className="text-gray-300 hover:text-yellow-400 transition-colors text-sm">
               Politique de confidentialité
             </Link>
             <Link href="#" className="text-gray-300 hover:text-yellow-400 transition-colors text-sm">
               Conditions d'utilisation
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

@@ -19,6 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr" suppressHydrationWarning>
+      <head>
+        <link rel="shortcut icon" href="/assets/icon-loum-angel.png" type="image/x-icon" />
+      </head>
       <body className={poppins.className}>
         <ThemeProvider
           attribute="class"

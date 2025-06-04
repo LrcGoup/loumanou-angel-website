@@ -4,7 +4,6 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
-import { ThemeSwitch } from "@/components/theme-switch"
 import { Menu, X } from "lucide-react"
 import Image from "next/image"
 
@@ -13,7 +12,6 @@ const navItems = [
   { name: "Services", href: "#services" },
   { name: "À propos", href: "#about" },
   { name: "Témoignages", href: "#testimonials" },
-  { name: "Contact", href: "#contact" },
 ]
 
 export default function Header() {

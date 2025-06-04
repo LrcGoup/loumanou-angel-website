@@ -63,7 +63,7 @@ export function Contact() {
                   </div>
                   <div>
                     <h4 className="font-medium">Notre adresse</h4>
-                    <p className="text-gray-600 mt-1">123 Rue de l'Innovation, 75000 Paris, France</p>
+                    <p className="text-gray-600 mt-1">2 plateaux premier étage Moov</p>
                   </div>
                 </div>
 
@@ -73,7 +73,7 @@ export function Contact() {
                   </div>
                   <div>
                     <h4 className="font-medium">Téléphone</h4>
-                    <p className="text-gray-600 mt-1">+33 1 23 45 67 89</p>
+                    <p className="text-gray-600 mt-1">+225 07 99 01 69 20</p>
                   </div>
                 </div>
 
@@ -83,15 +83,21 @@ export function Contact() {
                   </div>
                   <div>
                     <h4 className="font-medium">Email</h4>
-                    <p className="text-gray-600 mt-1">contact@lrcgroup.com</p>
+                    <p className="text-gray-600 mt-1">contact@loumanouangel.com</p>
                   </div>
                 </div>
               </div>
             </div>
 
             <div className="h-64 w-full bg-gray-200 rounded-lg overflow-hidden">
-              {/* This would be a map component in a real implementation */}
-              <div className="h-full w-full flex items-center justify-center text-gray-500">Carte interactive</div>
+              <div className="h-full w-full flex items-center justify-center text-gray-500">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.536684849258!2d15.266293!3d-4.263431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a34c655e82061%3A0x19c06667630bfa6b!2sTon%20Lieu!5e0!3m2!1sfr!2scg!4v1689442671580!5m2!1sfr!2scg"
+                  width="100%"
+                  height="100%"
+                  loading="lazy"
+                />
+              </div>
             </div>
           </div>
         </div>
