@@ -14,7 +14,7 @@ export function Hero() {
   }, [])
   return (
     <section className="relative overflow-hidden bg-green-950 py-20 md:py-36">
-      <div className="max-w-6xl mx-auto px-4 relative z-10">
+      <div className="max-w-6xl mx-auto px-4 overflow-hidden relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className={cn(
             "transition-all duration-1000 transform space-y-6 pt-12 lg:pt-0",

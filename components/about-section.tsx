@@ -28,7 +28,7 @@ export default function AboutSection() {
 
   return (
     <section id="about" className="py-20">
-      <div id="about-section" className="max-w-6xl mx-auto px-4">
+      <div id="about-section" className="max-w-6xl mx-auto px-4 overflow-hidden">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className={cn(
             "order-2 lg:order-1",

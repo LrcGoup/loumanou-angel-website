@@ -61,7 +61,7 @@ export default function FeaturesSection() {
 
   return (
     <section className="py-20">
-      <div id="features-section" className="max-w-6xl mx-auto px-4">
+      <div id="features-section" className="max-w-6xl mx-auto px-4 overflow-hidden">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className={cn(
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12",

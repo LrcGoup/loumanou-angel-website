@@ -65,7 +65,7 @@ export default function TestimonialsSection() {
 
   return (
     <section id="testimonials" className="py-20 bg-muted/50">
-      <div id="testimonials-section" className="max-w-6xl mx-auto px-4">
+      <div id="testimonials-section" className="max-w-6xl mx-auto px-4 overflow-hidden">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Ce que disent nos clients</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">

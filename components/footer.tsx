@@ -8,7 +8,7 @@ import NewsletterForm from "./newsletter-form"
 export default function Footer() {
   return (
     <footer className="bg-green-950 text-white">
-      <div className="max-w-6xl mx-auto px-4 py-12 md:py-16">
+      <div className="max-w-6xl mx-auto px-4 overflow-hidden py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div className="">
             <Link href="/" className="flex items-center space-x-1 mb-6">
@@ -106,7 +106,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-green-900">
-        <div className="max-w-6xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
+        <div className="max-w-6xl mx-auto px-4 overflow-hidden py-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-300 text-sm">© {new Date().getFullYear()} Loumanou Angel. Tous droits réservés.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             {/* <Link href="#" className="text-gray-300 hover:text-yellow-400 transition-colors text-sm">

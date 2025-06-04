@@ -38,7 +38,7 @@ export default function Header() {
         scrolled ? "bg-background/95 backdrop-blur-sm shadow-sm" : "bg-transparent"
       )}
     >
-      <div className="max-w-6xl mx-auto px-4 py-5 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-4 overflow-hidden py-5 flex items-center justify-between">
         <div className="flex items-center">
           <Link href="/" className="flex items-center space-x-1">
             <div className="relative w-14 h-14">
