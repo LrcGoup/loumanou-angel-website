@@ -33,7 +33,7 @@ export function Contact() {
                   </div>
                   <div>
                     <h4 className="font-medium">Notre adresse</h4>
-                    <p className="text-gray-600 mt-1">2 plateaux premier étage Moov</p>
+                    <p className="text-gray-600 mt-1">1er Etage, Apartment A7, Les deux plateau en face de l’ena, Cocody, Abidjan</p>
                   </div>
                 </div>
 
